@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:clipChildren="false"
+    android:clipToPadding="false"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/animation_text"
+        android:layout_width="21dp"
+        android:layout_height="21dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:maxLines="1"
+        android:text="0"
+        android:textColor="#39bf9e"
+        android:textSize="11dp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/animation_image"
+        android:layout_width="19dp"
+        android:layout_height="19dp"
+        android:layout_gravity="center"
+        android:src="@drawable/guide_animation_image" />
+
+    <ImageView
+        android:id="@+id/default_image"
+        android:layout_width="7dp"
+        android:layout_height="7dp"
+        android:layout_gravity="center"
+        android:src="@drawable/guide_indicator"
+        android:visibility="visible" />
+</FrameLayout>
