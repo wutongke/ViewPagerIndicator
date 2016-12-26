@@ -25,7 +25,7 @@ public class MainActivity extends AppCompatActivity {
 
     private void initView() {
         ViewPager viewPager = (ViewPager) findViewById(R.id.viewpager);
-        GuideIndicator guideIndicator = (GuideIndicator) findViewById(R.id.indicator);
+        GuideIndicator indicator = (GuideIndicator) findViewById(R.id.indicator);
         ImageView imageView1 = (ImageView) LayoutInflater.from(this).inflate(R.layout.image, null);
         imageView1.setImageResource(R.drawable.b1);
         ImageView imageView2 = (ImageView) LayoutInflater.from(this).inflate(R.layout.image, null);
@@ -43,8 +43,8 @@ public class MainActivity extends AppCompatActivity {
         ViewPagerAdapter adapter = new ViewPagerAdapter(viewList, this);
         viewPager.setAdapter(adapter);
         viewPager.setCurrentItem(0);
-        guideIndicator.setViewPager(viewPager);
-        guideIndicator.startAnimation();
+        indicator.setViewPager(viewPager);
+        indicator.startAnimation();
     }
 
 
