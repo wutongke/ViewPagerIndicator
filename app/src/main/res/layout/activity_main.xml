@@ -14,6 +14,17 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent" />
 
+        <Button
+            android:id="@+id/start_gif"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/indicator"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="40dp"
+            android:background="@color/transparent"
+            android:text="start_gif"
+            android:textColor="#ffffff" />
+
         <com.linked.erfli.viewpagerindicator.GuideIndicator
             android:id="@+id/indicator"
             android:layout_width="wrap_content"

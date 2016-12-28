@@ -1,6 +1,7 @@
 package com.linked.erfli.viewpagerindicator;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.os.Parcelable;
 import android.support.v4.view.PagerAdapter;
@@ -45,6 +46,12 @@ public class MainActivity extends AppCompatActivity {
         viewPager.setCurrentItem(0);
         indicator.setViewPager(viewPager);
         indicator.startAnimation();
+        findViewById(R.id.start_gif).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this, GifActivity.class));
+            }
+        });
     }
 
 
